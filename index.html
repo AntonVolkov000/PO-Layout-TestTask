@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,user-scalable=0,shrink-to-fit=no">
     <title>Main page</title>
     <link rel="stylesheet" href="scss/main.css">
 </head>
@@ -21,7 +22,7 @@
             </div>
 
             <div class="side side_right">
-                <form action="" class="search">
+                <form class="search">
                     <label class="search__text">
                         <input type="text" name="query" placeholder="Поиск">
                     </label>
@@ -39,80 +40,127 @@
         </div>
     </header>
 
+    <div></div>
+
     <main>
         <div class="container main__container">
 
             <section class="banner">
-                <h1>ООО”КОНТРАСТ” - официальный дилер масел “ENEOS”</h1>
-                <h2>Моторные масла ENEOS отвечает новейшим требования классификации SAE, API, ACEA, ILSAC</h2>
+                <div class="banner-slider swiper-container">
+                    <div class="banner-wrapper swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <img class="slide__background" src="./img/banner-background.png" alt="banner-background">
+                            <h2 class="slide__title">ООО”КОНТРАСТ” - официальный дилер масел “ENEOS”</h2>
+                            <span class="slide__description">Моторные масла ENEOS отвечает новейшим требования классификации SAE, API, ACEA, ILSAC</span>
+                            <button class="slide__button-detail">Узнать больше</button>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img class="slide__background" src="./img/banner-background.png" alt="banner-background">
+                            <h2 class="slide__title">ООО”КОНТРАСТ” - официальный дилер масел “ENEOS”</h2>
+                            <span class="slide__description">Моторные масла ENEOS отвечает новейшим требования классификации SAE, API, ACEA, ILSAC</span>
+                            <button class="slide__button-detail">Узнать больше</button>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img class="left-arrow" src="./img/left-arrow.svg" alt="left-arrow">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img class="right-arrow" src="./img/right-arrow.svg" alt="right-arrow">
+                    </div>
+                </div>
             </section>
 
             <section class="catalog-sections">
                 <h1>Разделы каталога</h1>
-                <div class="product">
-                    <img src="./img/products/total.png" alt="total">
-                    <p>Импортные масла</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/lukoil.png" alt="lukoil">
-                    <p>Отечественные масла</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/g11.png" alt="g11">
-                    <p>Тосол, антифриз</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/storm.png" alt="storm">
-                    <p>Аккумуляторы</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/braiton.png" alt="braiton">
-                    <p>Краски, эмаль</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/dot3.png" alt="dot3">
-                    <p>Автохимия</p>
+                <div class="products">
+                    <a class="product" href="#">
+                        <img src="./img/products/total.png" alt="total">
+                        <span class="product__name">Импортные масла</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/lukoil.png" alt="lukoil">
+                        <span class="product__name">Отечественные масла</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/g11.png" alt="g11">
+                        <span class="product__name">Тосол, антифриз</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/storm.png" alt="storm">
+                        <span class="product__name">Аккумуляторы</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/braiton.png" alt="braiton">
+                        <span class="product__name">Краски, эмаль</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/dot3.png" alt="dot3">
+                        <span class="product__name">Автохимия</span>
+                    </a>
                 </div>
             </section>
 
             <section class="popular-products">
                 <h1>Популярные товары</h1>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
-                </div>
-                <div class="product">
-                    <img src="./img/products/enamel.png" alt="Эмаль">
-                    <p>Фотоаппарат Nikon D3400</p>
+                <div class="products">
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
+                    <a class="product" href="#">
+                        <img src="./img/products/enamel.png" alt="Эмаль">
+                        <span class="product__name">Фотоаппарат Nikon D3400</span>
+                    </a>
                 </div>
             </section>
 
             <section class="about">
                 <h1>О компании</h1>
+                <div class="content">
+                    <div class="certificate-slider swiper-container">
+                        <div class="certificate-wrapper swiper-wrapper">
+                            <div class="slide swiper-slide">
+                                <img class="slide__certificate" src="./img/sert_devon_2020.png" alt="certificate">
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img class="slide__certificate" src="./img/sert_devon_2020.png" alt="certificate">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img class="left-arrow" src="./img/left-arrow.svg" alt="left-arrow">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img class="right-arrow" src="./img/right-arrow.svg" alt="right-arrow">
+                        </div>
+                    </div>
+                    <p class="content__text">
+                        ООО «КОНТРАСТ» является официальным представителем смазочных материалов марок «TOTAL» и «ELF» (Франция), дилером масел «CHEVRON» (США), «ENEOS» (Япония) по Республике Коми и официальным поставщиком отечественных смазочных материалов «Девон», «Роснефть», «ЛУКОЙЛ» и других. Компания «КОНТРАСТ» была основана в 2005 году, изначально в качестве обособленного подразделения ООО «Масла и смазки» (г. Киров), с 2009 г. получило самостоятельную организационно-правовую форму. Сейчас ООО «КОНТРАСТ» является ведущим поставщиком смазочных материалов в регионе и зарекомендовала себя как надежный и профессиональный партнер. <a class="more" href="#">Читать дальше</a>
+                    </p>
+                </div>
             </section>
 
         </div>
@@ -120,10 +168,12 @@
 
     <footer>
         <div class="container footer__container">
-            <div class="side">
+            <div class="logo-container">
                 <a href="#"><img class="logo" src="./img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="links">
                 <div class="buyers">
-                    <div class="title">Покупателям</div>
+                    <h2 class="title">Покупателям</h2>
                     <ul class="list">
                         <li><a href="#">Пластичные смазки</a></li>
                         <li><a href="#">Тосол, антифриз</a></li>
@@ -133,7 +183,7 @@
                     </ul>
                 </div>
                 <div class="company">
-                    <div class="title">Компания</div>
+                    <h2 class="title">Компания</h2>
                     <ul class="list">
                         <li><a href="#">Контакты</a></li>
                         <li><a href="#">О компании</a></li>
@@ -141,10 +191,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="side side_right">
+            <div class="buttons">
                 <button class="bell">
                     <img src="./img/phone.svg" alt="phone">
-                    <p>Заказать звонок</p>
+                    <span>Заказать звонок</span>
                 </button>
                 <button class="up">
                     <img src="./img/up-arrow.svg" alt="up-arrow">
@@ -153,5 +203,7 @@
         </div>
     </footer>
 
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
