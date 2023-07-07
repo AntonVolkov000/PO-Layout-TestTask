@@ -1,6 +1,9 @@
 @import "vendor";
 
 $control-background-color: #008DD2;
+$header-height: 100px;
+$image-burger: url("../img/hamburger.png");
+$image-close-burger: url("../img/hamburger-close.png");
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Regular.woff");
@@ -56,8 +59,9 @@ header {
 .header__container {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: $header-height;
   padding: 32px 20px;
+  background-color: white;
 }
 
 .menu {
@@ -69,6 +73,12 @@ header {
   li {
     margin-right: 32px;
   }
+}
+
+.black-search {
+  display: none;
+  background-color: transparent;
+  margin-right: 20px;
 }
 
 .search {
@@ -103,6 +113,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 24px;
+    min-width: 24px;
     height: 24px;
     border-radius: 100%;
     background: $control-background-color;
@@ -132,6 +143,14 @@ header {
     font-size: 11px;
     color: white;
   }
+}
+
+.hamburger {
+  display: none;
+  width: 34px;
+  height: 34px;
+  margin-left: 30px;
+  background: transparent $image-burger center no-repeat;
 }
 
 /* main */
@@ -400,7 +419,28 @@ footer {
   }
 
   .menu {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: $header-height;
+    left: -200px;
+    z-index: 11;
+    height: 100%;
+    background-color: white;
+    margin-left: 25px;
+    padding: 10px;
+    transition-duration: .2s;
+
+    &.active {
+      left: 0;
+    }
+  }
+
+  .hamburger {
+    display: block;
+
+    &.active {
+      background-image: $image-close-burger;
+    }
   }
 
   .main__container {
@@ -491,8 +531,23 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .black-search {
+    display: block;
+  }
+
   .search {
-    display: none;
+    position: absolute;
+    top: 98px;
+    left: -500px;
+    z-index: 12;
+    max-width: calc(100% - 50px);
+    margin: 0 25px;
+    background-color: white;
+    transition-duration: .2s;
+
+    &.active {
+      left: 0;
+    }
   }
 
   .banner-slider {

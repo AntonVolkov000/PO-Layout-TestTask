@@ -13,6 +13,19 @@ new Swiper('.certificate-slider', {
 });
 
 const upButton = document.getElementsByClassName('up')[0];
-upButton.addEventListener("click", () => {
+upButton.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+const menu = document.getElementsByClassName('menu')[0];
+const menuButton = document.getElementsByClassName('hamburger')[0];
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+const searchActiveButton = document.getElementsByClassName('black-search')[0];
+const search = document.getElementsByClassName('search')[0];
+searchActiveButton.addEventListener('click', () => {
+  search.classList.toggle('active');
 });
